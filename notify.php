@@ -1,26 +1,16 @@
 <?php
 
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
+/*
 define('DB_HOST',"localhost");
 define('DB_USER',"root");
 define('DB_PASS',"rootpass");
 define('DB_NAME',"passify_commingsoon");
+*/
 
 $alert  = null;
 $field  = null;
 $notify = null;
-/*
-
-define('DB_HOST',"localhost");
-define('DB_USER',"paasify_user");
-define('DB_PASS',"T[*,!7#ziEcO");
-define('DB_NAME',"paasify_commingsoon");
-
-*/
 
 // Create connection
 
