@@ -1,3 +1,4 @@
+<?php include 'notify.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -52,12 +53,16 @@
 							<p>پسیفای یک اپلیکیشن خدمات ابری پیشرفته است که با ایجاد زیرساخت کوبرنتیز و داکر سرویس سکوی ابری یا PaaS ارائه میدهد</p>
 						</div>
 					</div>
-					<form action="coming-soon-v1.html#" style="direction: ltr">
-						<input type="text" placeholder="09120186223">
+					<form action="#" method="post" style="direction: ltr">
+						<input type="text" name="notify" placeholder="09120186223">
 						<button>به من اطلاع بده</button>
 					</form>
 					<div class="col-lg-9 m-auto notifme-text">
+						<?php if (is_null($alert)) { ?>
 						<p>شماره موبایل یا ایمیل خود را وارد کنید، ما به محض راه اندازی سرویس با ارسال یک کد تخفیف <code> 2 ملیول ریالی</code> به شما اطلاع رسانی خواهیم کرد</p>
+						<?php } else { ?>
+						<p><?php echo ($alert) ?></p>
+						<?php } ?>
 					</div>
 
 					<ul class="social-icon d-flex justify-content-center">
